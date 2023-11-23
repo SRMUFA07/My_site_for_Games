@@ -5,7 +5,7 @@
     <title>Приложения от SRMUFA07</title>
     <meta name="Author" content="SRMUFA07" />
 
-    <link rel="stylesheet" href="css/designe.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" id="cssStyles" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,42 +16,31 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" user scalable="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="icon/apple-touch-icon.png"/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icon/favicon-32x32.png"/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icon/favicon-16x16.png"/>
-
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#4B515D"/>
-    <meta name="msapplication-TileColor" content="#4B515D"/>
-    <meta name="theme-color" content="#4B515D"/>
-
-    <link rel="icon" href="Icon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e2e2e">
+    <meta name="msapplication-TileColor" content="#2e2e2e">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header>
+      <p class="titleSite">Приложения</p>
+      <br /><br />
       <img
         class="siteIcon"
         align="center"
-        src="img/IconSite.png"
-        width="100px"
+        src="img/iconSite.png"
+        width="95px"
         height="100px"
         alt="ой ой, картинки нет("
       />
-      <li class="sections"><a class="sections" href="index.html">Главная</a></li>
-      <li class="sections"><a class="sections" href="">Приложения</a></li>
-      <li class="sections"><a class="sections" href="games.html">Игры</a></li>
-      <li class="sections"><a class="sections" target="blank" href="https://vk.com/srmufa07">Автор</a></li>
+      <li class="sections"> <a class="sections" href="index.html">Главная</a> </li>
+      <li class="sections"> <a class="sections" href="games.html">Игры</a> </li>
+      <li class="sections"> <a class="sections" target="blank" href="https://vk.com/srmufa07">Автор</a></li>
       <li class="sections"><a class="sections" href="news.html">Новости</a></li>
 
       <!--
@@ -61,8 +50,22 @@
       </form>
       -->
     </header>
+
     <div class="wrapper">
       <div class="app">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
         <table>
           <tr>
             <td>
@@ -73,27 +76,49 @@
             </td>
           </tr>
         </table>
+
         <p class="description">
           Описание: Вводите максимальное число в первую строку, и мое приложение
           выдаст случайное число не больше этого. Так вы можете решать споры с
           друзьями и не только споры)
         </p>
-        <img align="center" src="img/скрин r.png" alt="ой ой, картинки нет("/>
-        <br><br>
+
+        <img align="center" src="img/скрин r.png" alt="ой ой, картинки нет(" />
+        <br /><br />
         <span class="forLink"> Скачать Windows и Linux: </span>
         <a
           href="https://drive.google.com/file/d/1NjFlXbsbqRCu2CvuWaQTppA3Sp7NH46d/view?usp=sharing"
           target="blank"
-          class="forLink">
-          278 кб</a>
+          class="forLink"
+        >
+          278 кб</a
+        >
       </div>
     </div>
+
     <footer>
+      <button id="changeThemeButton" class="changeTheme">Сменить тему</button>
+      <script src="js/changeTheme.js"></script>
+
       <p class="contacts">Tел. +7-962-525-84-72</p>
       <p class="contacts">Email: SRMUFA07@gmail.com</p>
       <p class="contacts">
         Поддержать автора:
-        <a class="tinkoff" target="blank" href="https://www.tinkoff.ru/cf/7kBeJCJQbFO">Tinkoff</a>
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://www.tinkoff.ru/cf/7kBeJCJQbFO"
+          >Tinkoff</a
+        >
+      </p>
+      <p class="contacts">
+        GitHub:
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://github.com/SRMUFA07?tab=repositories"
+          >SRMUFA07</a
+        >
       </p>
     </footer>
   </body>

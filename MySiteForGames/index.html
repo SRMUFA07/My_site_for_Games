@@ -4,8 +4,7 @@
   <head>
     <title>Главная</title>
 
-    <link rel="stylesheet" href="css/designe.css" />
-    <link rel="stylesheet" type="text/css" href="/css/designe.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" id="cssStyles" />
 
     <meta name="Author" content="SRMUFA07" />
 
@@ -17,39 +16,27 @@
     />
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" user scalable="0"/>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icon/favicon-16x16.png"
-    />
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#4B515D" />
-    <meta name="msapplication-TileColor" content="#4B515D" />
-    <meta name="theme-color" content="#4B515D" />
+    <meta name="viewport" content="width=device-width" user scalable="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
 
-    <link rel="icon" href="Icon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e2e2e">
+    <meta name="msapplication-TileColor" content="#2e2e2e">
+    <meta name="theme-color" content="#ffffff">
   </head>
+
   <body>
     <header>
       <p class="titleSite">Главная</p>
-      <br><br>
+      <br /><br />
       <img
-        class="siteIcon"
         align="center"
-        src="img/IconSite.png"
-        width="100px"
+        class="siteIcon"
+        src="img/iconSite.png"
+        width="95px"
         height="100px"
         alt="ой ой, картинки нет("
       />
@@ -59,8 +46,8 @@
       <li class="sections"><a class="sections" href="games.html">Игры</a></li>
       <li class="sections">
         <a class="sections" target="blank" href="https://vk.com/srmufa07"
-          >Автор</a
-        >
+          >Автор
+        </a>
       </li>
       <li class="sections">
         <a class="sections" href="news.html">Новости</a>
@@ -69,18 +56,46 @@
 
     <div class="wrapper">
       <div class="app">
-        <p class="description">Привет, я SRMUFA07, на этот сайт я буду выкладывать свои игры. Здесь вы сможете их скачать или поиграть в более новые. Так же если вы захотите со мной связатся все контакты снизу. Приятной игры, и не только!</p>
+        <p class="description">
+          Привет, я SRMUFA07, junior разработчик игр на Unity, имею небольшой
+          опыт в Java Android Studio, также пишу неплохие сайты на HTML & CSS,
+          пробую себя в новых языках и технологиях. На этот сайт я буду
+          выкладывать свои игры. Здесь вы сможете их скачать или поиграть в
+          более новые. Так же если вы захотите со мной связатся все контакты
+          снизу. Работаю на них:
+          <a class="linkButton" target="blank" href="http://segagame.io/games"
+            >segagame.io</a
+          >, там вы встретите больше моих игр и множество друих, над которыми я
+          работал. Очень советую заглянуть в игру Galactic Commotion, ссылка на
+          страницу в Яндекс Играх есть в разделе
+          <span class="italicFont">Игры</span>. Приятной игры!
+        </p>
       </div>
     </div>
 
     <footer>
+      <button id="changeThemeButton" class="changeTheme">Сменить тему</button>
+      <script src="js/changeTheme.js"></script>
+
       <p class="contacts">Tел. +7-962-525-84-72</p>
       <p class="contacts">Email: SRMUFA07@gmail.com</p>
       <p class="contacts">
         Поддержать автора:
-        <a class="tinkoff" target="blank" href="https://www.tinkoff.ru/cf/7kBeJCJQbFO">
-          Tinkoff
-        </a>
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://www.tinkoff.ru/cf/7kBeJCJQbFO"
+          >Tinkoff</a
+        >
+      </p>
+      <p class="contacts">
+        GitHub:
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://github.com/SRMUFA07?tab=repositories"
+          >SRMUFA07</a
+        >
       </p>
     </footer>
   </body>

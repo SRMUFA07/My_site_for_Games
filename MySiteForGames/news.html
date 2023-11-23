@@ -3,13 +3,10 @@
 <html - lang="ru">
   <head>
     <title>Новости сайта</title>
-    <!--тут заголовок страницы-->
-
-    <link rel="stylesheet" href="css/designe.css" />
-    <!--подключаю css-->
-
+    <meta charset="UTF-8" />
     <meta name="Author" content="SRMUFA07" />
-    <!--автор страницы-->
+
+    <link rel="stylesheet" href="css/dark-theme.css" id="cssStyles" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,59 +14,44 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
-    <!--импортирую шрифт-->
-
-    <meta charset="UTF-8" />
-    <!--кириллица-->
 
     <meta name="viewport" content="width=device-width" user scalable="0" />
-    <!--
-     адаптивность под другие разрешения
-     user scalable=0 -это запрет на масштабирование с телефона
-   -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icon/favicon-16x16.png"
-    />
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#4B515D" />
-    <meta name="msapplication-TileColor" content="#4B515D" />
-    <meta name="theme-color" content="#4B515D" />
-
-    <link rel="icon" href="Icon/favicon.ico" type="image/x-icon" />
-    <!--поставил значок-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e2e2e">
+    <meta name="msapplication-TileColor" content="#2e2e2e">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <script src="js/script.js"></script>
     <div class="header">
       <header>
+        <p class="titleSite">Новости</p>
+      <br /><br />
         <img
           class="siteIcon"
           align="center"
-          src="img/IconSite.png"
-          width="100px"
+          src="img/iconSite.png"
+          width="95px"
           height="100px"
           alt="ой ой, картинки нет("
         />
 
-        <li class="sections"><a class="sections" href="index.html">Главная</a></li>
-        <li class="sections"><a class="sections" href="apps.html">Приложения</a></li>
+        <li class="sections">
+          <a class="sections" href="index.html">Главная</a>
+        </li>
+        <li class="sections">
+          <a class="sections" href="apps.html">Приложения</a>
+        </li>
         <li class="sections"><a class="sections" href="games.html">Игры</a></li>
-        <li class="sections"><a class="sections" target="blank" href="https://vk.com/srmufa07">Автор</a></li>
-        <li class="sections"><a class="sections" href="">Новости</a></li>
+        <li class="sections">
+          <a class="sections" target="blank" href="https://vk.com/srmufa07"
+            >Автор</a
+          >
+        </li>
 
         <!--
         <form class="searchString">
@@ -79,81 +61,35 @@
       --></header>
     </div>
     <div class="wrapper">
-      <div class="news">
-        <p class="newsText">
-          20.07.2022 - На сайт добавлено приложение "Randomizer"(Описание
-          смотрите во вкладке <span class="italicFont">приложения</span>).
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          4.08.2022 - На сайт добавлена игра "Piano"(Описание читайте во вкладке
-          <span class="italicFont">игры</span>).
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          13.09.2022 - На сайт добавлена игра "Find the Bombs"(Описание читайте
-          во вкладке <span class="italicFont">игры</span>).
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          17.09.2022 - Обновление игры (версия 0.2) "Find the Bombs". Улучшено
-          поведение некоторых врагов, также чуть переделан интерфейс.
-        </p>
-        <img
-          align="center"
-          src="img/скрин0.2update1.png"
-          alt="ой ой, картинки нет("
-        />
-        <br />
-        <img
-          align="center"
-          src="img/скрин0.2update2.png"
-          alt="ой ой, картинки нет("
-        />
-        <br />
-        <img
-          align="center"
-          src="img/скрин0.2update3.png"
-          alt="ой ой, картинки нет("
-        />
-        <br />
-      </div>
-      <div class="news">
-        <p class="newsText">
-          18.09.2022 - На сайт добавлена моя старая игра "Boxes"(Описание
-          читайте во вкладке <span class="italicFont">игры</span>).
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          25.09.2022 - На сайт добавлена новая вкладка
-          <span class="italicFont">Главная</span>.
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          03.10.2022 - Игра "Find the Bombs" теперь доступна на Android! (Игра
-          доступна только с Android 6.0)
-        </p>
-      </div>
-      <div class="news">
-        <p class="newsText">
-          06.10.2022 - Обновление игры "Find the Bombs". Переделано управление,
-          чуть изминен дизайн, исправлено несколько багов. (версия 1.3,
-          платформа: Android)
+      <div class="app">
+        <p class="description">
+          21.06.2023 - Сайт снова в деле! Добавлено множество новых проектов.
+          Добавлена новая тема и анимированный фон. (Новостная лента обновлена)
         </p>
       </div>
     </div>
     <footer>
+      <button id="changeThemeButton" class="changeTheme">Сменить тему</button>
+      <script src="js/changeTheme.js"></script>
+
       <p class="contacts">Tел. +7-962-525-84-72</p>
       <p class="contacts">Email: SRMUFA07@gmail.com</p>
       <p class="contacts">
         Поддержать автора:
-        <a class="tinkoff" target="blank" href="https://www.tinkoff.ru/cf/7kBeJCJQbFO"
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://www.tinkoff.ru/cf/7kBeJCJQbFO"
           >Tinkoff</a
+        >
+      </p>
+      <p class="contacts">
+        GitHub:
+        <a
+          class="linkButton"
+          target="blank"
+          href="https://github.com/SRMUFA07?tab=repositories"
+          >SRMUFA07</a
         >
       </p>
     </footer>
